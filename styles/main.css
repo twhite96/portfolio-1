@@ -60,9 +60,21 @@ img.next-image {
   margin: 0;
 }
 
+/* span > .brand::before {
+      background-color: #ee5f85;
+      content: "";
+      position: absolute;
+      width: calc(100% + 4px);
+      height: 60%;
+      left: -2px;
+      bottom: 0;
+      z-index: -1;
+      transform: rotate(-2deg);
+} */
+
 .shrink {
-  margin-top: -2.2em !important;
-  margin-bottom: -2.2em !important;
+  margin-top: -2em !important;
+  margin-bottom: -2em !important;
 }
 
 .prose a {
