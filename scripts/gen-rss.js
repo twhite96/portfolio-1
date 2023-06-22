@@ -5,9 +5,10 @@ const matter = require('gray-matter');
 
 async function generate() {
   const feed = new RSS({
-    title: "Reilly O'Donnell",
-    site_url: 'https://reilly.dev',
-    feed_url: 'https://reilly.dev/feed.xml',
+    title: "tiff's blog",
+    author: 'tiff',
+    site_url: 'https://tiffanywhite.dev',
+    feed_url: 'https://tiffanywhite.dev/feed.xml',
   });
 
   const posts = await fs.readdir(path.join(__dirname, '..', 'pages', 'posts'));
@@ -26,7 +27,7 @@ async function generate() {
         url: '/posts/' + name.replace(/\.mdx?/, ''),
         date: frontmatter.data.date,
         description: frontmatter.data.description,
-        categories: frontmatter.data.tag.split(', '),
+        // categories: frontmatter.data.tag.split(', '),
         author: frontmatter.data.author,
       });
     })

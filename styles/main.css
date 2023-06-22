@@ -60,8 +60,13 @@ img.next-image {
   margin: 0;
 }
 
+.shrink {
+  margin-top: -2.2em !important;
+  margin-bottom: -2.2em !important;
+}
+
 .prose a {
-  color: #0074de;
+  color: #3da1ff;
 }
 
 .nav-line .nav-link {
