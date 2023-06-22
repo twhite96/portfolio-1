@@ -6,84 +6,45 @@ date: 2021-03-18
 
 # Snippets
 
-{/* ## Compare two arrays of objects based on a specified property w/ TS magic (generics)🪄
+How do we create a closure in JavaScript?
 
 ```typescript
-interface User {
-  id: number;
-  name: string;
+function createCounter() {
+  let count = 0;
+
+  return function () {
+    count++;
+    console.log(count);
+  };
 }
 
-const arr1: User[] = [
-  { id: 0, name: 'Ash' },
-  { id: 1, name: 'Brock' },
-];
-const arr2: User[] = [
-  { id: 0, name: 'Misty' },
-  { id: 1, name: 'Professor Oak' },
-];
+const counter = createCounter();
+counter(); // Outputs: 1
+counter(); // Outputs: 2
+counter(); // Outputs: 3
+```
 
-interface AreNamesInArraysThesameParams {
-  arr1: User[];
-  arr2: User[];
-}
+The inner function has a closure (or backpack) that allows it to "remember" the value of count no matter where we call it!
 
-// ❌ Don't do this! Abstract the property so it's extendable to all types of array of objects!
-function areArrayObjectsEqualByName({
-  arr1,
-  arr2,
-}: areNamesInArraysTheSameParams) {
-  if (arr1.length === arr2.length) {
-    return arr1.every((arr1Item) => {
-      return arr2.some((arr2Item) => {
-        return arr1Item.name === arr2Item.name;
-      });
-    });
+This is a super powerful tool that makes a lot of things possible!
+
+## Closures in React
+
+Here's the "React" version of the above code
+
+```typescript
+export function Counter() {
+  const [count, setCount] = useState(0);
+
+  function updateCount() {
+    setCount(count + 1);
   }
-  return false;
+
+  return <button onClick={updateCount}>{count}</button>;
 }
+```
 
-interface ArrayComparisonParams<T> {
-  arr1: T[];
-  arr2: T[];
-  property: keyof T;
-}
+Ok but I'm kind of lost here. I forked this portfolio from [reilly.dev](https://reilly.dev) and he forked the [Nextra](https://nextra.site) template for Next.js.
 
-// ✅ Instead pass a generic for TS magic! 🪄
-// By passing a generic we can call this function with any array of objects with a common property!
-function areArrayObjectsEqualByValue<T>({
-  arr1,
-  arr2,
-  property,
-}: ArrayComparisonParams<T>) {
-  if (arr1.length === arr2.length) {
-    return arr1.every((arr1Item) => {
-      return arr2.some((arr2Item) => {
-        return arr1Item[property] === arr2Item[property];
-      });
-    });
-  }
-  return false;
-}
-
-const sameItems1: User[] = [
-  { id: 0, name: 'Ash' },
-  { id: 1, name: 'Brock' },
-];
-const sameItems2: User[] = [
-  { id: 1, name: 'Brock' },
-  { id: 0, name: 'Ash' },
-];
-
-console.log(
-  areArrayObjectsEqualByValue({
-    arr1: sameItems1,
-    arr2: sameItems2,
-    property: 'name',
-  })
-);
-// true
-
-console.log(areArrayObjectsEqualByValue({ arr1, arr2, property: 'name' }));
-// false
-``` */}
+In that repo was this post, which I haven't deleted (which is gone from his site by the way), about closures, which I grok pretty easily now.
+But reasoning about this in React might take some time!
