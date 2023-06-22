@@ -6,6 +6,10 @@ date: 2021-03-18
 
 # Snippets
 
+
+## React
+---
+
 How do we create a closure in JavaScript?
 
 ```typescript
@@ -48,3 +52,74 @@ Ok but I'm kind of lost here. I forked this portfolio from [reilly.dev](https://
 
 In that repo was this post, which I haven't deleted (which is gone from his site by the way), about closures, which I grok pretty easily now.
 But reasoning about this in React might take some time!
+
+
+## Python
+---
+
+Here is a snippet from a Python project I am working on where I want to create a new RSS feed on the command line. It's been in the works for almost a year now, sadly...
+
+```python
+#!/usr/bin/env python
+# coding=utf8
+
+import feedparser
+import typer
+from typing import Optional
+import sys
+import datetime
+import urllib
+import pprint
+import datetime
+import json
+
+# We'll need to instantiate the Typer class so we can
+# work with it later when we need to get input
+# from the command line
+app = typer.Typer()
+
+# Here I created a function where I pass a default parameter
+# and assign that parameter to the app variable I created above the function
+# I have not run this yet so not sure of any scope issues
+
+def main(url: str = typer.Option(...,prompt="Please enter the url you'd like to parse")):
+  """
+  This is where I'll place morst of 
+  the business logic for this script
+  """
+  app.echo(f"{url}")
+  fp = feedparser.parse(url)
+  fp['feed']['title']
+  print(fp)
+
+
+if __name__ == "__main__":
+    main()
+```
+
+## Ruby
+---
+Here, I am experimenting with `FileUtils` and `File` in Ruby. I am trying to create a new file and write to it. I am also trying to create a new directory and write to a file in that directory.
+
+```ruby
+require 'fileutils'
+
+path = File.expand_path('../', __FILE__)
+Dir.glob("#{path}/**/*.*").each do |file|
+  new_path = "#{path}/#{file.split('/')[-1]}"
+  FileUtils.mv(file, new_path)
+end
+```
+
+This is for my static site generator that is also been in the works for over two years...
+
+I *truly* need some [help with this](https://github.com/twhite96/static-gen-ruby) [project](https://github.com/users/twhite96/projects/5?query=is:open+sort:updated-desc) so if you can take a look that would be helpful!
+
+## Go
+---
+
+
+## Rust
+---
+
+## SQL and Databases
