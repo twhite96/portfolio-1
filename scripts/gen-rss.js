@@ -8,7 +8,7 @@ async function generate() {
     title: "tiff's blog",
     author: 'tiff',
     site_url: 'https://tiffanywhite.dev',
-    feed_url: 'https://tiffanywhite.dev/feed.xml',
+    feed_url: 'https://tiffanywhite.dev/rss.xml',
   });
 
   const posts = await fs.readdir(path.join(__dirname, '..', 'pages', 'posts'));
@@ -33,7 +33,7 @@ async function generate() {
     })
   );
 
-  await fs.writeFile('./public/feed.xml', feed.xml({ indent: true }));
+  await fs.writeFile('./public/rss.xml', feed.xml({ indent: true }));
 }
 
 generate();
