@@ -8,10 +8,22 @@ async function generate() {
     title: "tiff's blog",
     author: 'tiff',
     site_url: 'https://tiffanywhite.dev',
-    feed_url: 'https://tiffanywhite.dev/rss',
+    feed_url: 'https://tiffanywhite.dev/rss.xml',
   });
 
-  const posts = await fs.readdir(path.join(__dirname, '..', 'pages', 'posts'));
+  const POSTS_DIRECTORY = path.join(process.cwd(), "posts");
+
+  function getAllPostIds() {
+    const fileNames = fs.readdirSync(POSTS_DIRECTORY);
+
+    return fileNames.map((fileName) => {
+      return {
+        params: {
+          id: fileName.replace(".md", ""),
+        },
+      };
+    });
+  }
 
   await Promise.all(
     posts.map(async (name) => {
@@ -26,7 +38,7 @@ async function generate() {
         title: frontmatter.data.title,
         url: '/posts/' + name.replace(/\.mdx?/, ''),
         date: frontmatter.data.date,
-        // description: frontmatter.data.description,
+        description: frontmatter.data.description,
         // categories: frontmatter.data.tag.split(', '),
         author: frontmatter.data.author,
       });
