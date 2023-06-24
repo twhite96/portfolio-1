@@ -3,8 +3,9 @@ import { Html, Head, Main, NextScript } from 'next/document';
 export default function Document() {
   const meta = {
     title: "tiff's blog",
-    description: 'Articles focus on React, TS, and Next.',
-    image: 'https://assets.vercel.com/image/upload/q_auto/front/vercel/dps.png',
+    description: "Articles focus on React, TS, and Next.",
+    image:
+      "https://res.cloudinary.com/twhiteblog/image/upload/v1685138249/favicon_zvkwc8.svg",
   };
 
   return (
