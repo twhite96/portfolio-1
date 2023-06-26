@@ -143,7 +143,7 @@ a:hover {
 }
 
 .nx-prose :where(blockquote):not(:where([class~=nx-not-prose] *)) {
-  border: 1px solid var(--quote-left-border);
+  border: 1px solid var(--link-hover);
     box-sizing: border-box;
     font-size: 1rem;
     padding: 16px;
