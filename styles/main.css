@@ -58,7 +58,7 @@ h2 {
 }
 
 .nx-prose :where(p):not(:where([class~=nx-not-prose] *)) {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   font-variation-settings: 'wght' 500;
   line-height: 1.75;
 }
