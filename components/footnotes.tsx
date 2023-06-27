@@ -1,7 +1,10 @@
 import littlefoot from "littlefoot";
 import "littlefoot/dist/littlefoot.css";
+import { useFootnotes } from "../hooks/useFootnotes";
 
-export default function Footnotes() {
+
+export function Footnotes() {
+  const footnotes = useFootnotes();
   return (
     <>
       <p>
