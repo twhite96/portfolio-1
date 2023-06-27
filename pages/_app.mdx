@@ -2,6 +2,7 @@ import 'nextra-theme-blog/style.css';
 // import type { AppProps } from 'next/app';
 import Head from 'next/head';
 import PlausibleProvider from "next-plausible";
+// import Footnotes from '../components/footnotes';
 import '../styles/main.css';
 
 export default function App({ Component, pageProps }) {
@@ -21,6 +22,7 @@ export default function App({ Component, pageProps }) {
           type="font/woff2"
           crossOrigin="anonymous"
         />
+       {/* <Footnotes /> */} 
       </Head>
       <PlausibleProvider domain="tiffanywhite.dev">
         <Component {...pageProps} />

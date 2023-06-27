@@ -6,7 +6,9 @@
     "start": "next start"
   },
   "dependencies": {
+    "feed": "^4.2.2",
     "gray-matter": "^4.0.3",
+    "littlefoot": "4.0.0-9",
     "next": "latest",
     "next-plausible": "^3.7.2",
     "nextra": "^2.7.1",
