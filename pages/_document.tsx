@@ -1,5 +1,5 @@
 import { Html, Head, Main, NextScript } from 'next/document';
-// import Footnotes from '../components/footnotes';
+import Footnotes from '../components/footnotes';
 
 export default function Document() {
   const meta = {
@@ -22,7 +22,7 @@ export default function Document() {
         <meta name='twitter:title' content={meta.title} />
         <meta name='twitter:description' content={meta.description} />
         <meta name='twitter:image' content={meta.image} />
-        {/* <Footnotes /> */}
+        <Footnotes />
       </Head>
       <body>
         <Main />

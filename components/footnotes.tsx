@@ -1,4 +1,4 @@
-const { littlefoot } = require("littlefoot").default;
+import littlefoot from "littlefoot";
 import "littlefoot/dist/littlefoot.css";
 
 export default function Footnotes() {
