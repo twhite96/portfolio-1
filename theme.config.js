@@ -13,7 +13,7 @@ export default {
           }
         `}</style>
         <div className='inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start'>
-          <a className="ml-1 -mb-7" aria-label="rss feed" href='/feed.xml'>
+          <a className='ml-1 -mb-7' aria-label='rss feed' href='/feed.xml'>
             <svg
               fill='#FFA500'
               stroke='currentColor'
