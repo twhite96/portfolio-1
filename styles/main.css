@@ -105,7 +105,7 @@ img.next-image {
 
 
 .nx-prose :where(li):not(:where([class~=nx-not-prose] *)) {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   font-variation-settings: 'wght' 500;
   line-height: 1.75;
   text-decoration: none;
