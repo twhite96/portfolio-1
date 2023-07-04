@@ -1,0 +1,52 @@
+---
+title: Frustration Leads to Iteration
+description: Spinning up this new Next.js blog was an exercise in staying sober.
+date: 2023-06-22
+draft: true
+tag: ['meta']
+---
+
+import Image from 'next/image';
+
+<div className="w-full h-full relative">
+  <Image
+    width={0}
+    height={0}
+    sizes="100vw"
+    src="https://res.cloudinary.com/twhiteblog/image/upload/c_scale,w_1251/v1688023938/lab_b8xx6w.webp"
+  />
+</div>
+
+I've spent a *very long time* trying to migrate this blog over to [Next.js](https://nextjs.org/). I forked a lot of projects, from Lee Robinson's excellent [personal website](https://leerob.io/)[^1] to perhaps my favorite dev on the internet, [Andrew Healey's](https://github.com/healeycodes) [wonderfully simple](https://healeycodes.com/) Next.js blog to finally settling on a fork of [Reilly O'Donnel's Next.js Blog](https://reilly.dev/). I've done some heavy moderation to some of the components of the fork and plan on continuing. However the issue I ran into with Next.js was **[MDX](https://mdxjs.com/)**[^2]
+
+
+## What's wrong with MDX?
+
+Well, what *was* wrong, to me at least, was the pain of moving hundreds of plain markdown files to it. To be fair, I've been writing at this blog for 8 years now. I started off with WordPress.com, then WordPress self-hosted, then to Jekyll, then to WordPress again, then to [Jekyll again](https://tw-blog-ochre.vercel.app/), then to Ghost and now to Next.js. [Gatsby, too](https://github.com/twhite96/TWBlog-newish). Round and round I went.
+
+Moving all those posts around, from WordPress when I wasn't using markdown, to exporting from WordPress, etc, meant that there were errors in the frontmatter, extra tags in the frontmatter, weird date formatting, and more.
+
+MDX is unforgiving with these issues as it *is* JavaScript in your markdown. I have 200+ files that I needed to get into the new system with as little a hiccup as possible.
+
+The other problem was my lack of understanding of how Next.js works.
+
+## Importing all posts
+
+I moved all 200+ posts into each of the above repos to build on [Vercel](https://vercel.com) which is my preferred deployment platform after years of using Netlify. Each push resulted in multiple build errors.
+
+I changed each `.md` extension to `.mdx` however there was raw html in several of the posts with weird formatting that kept Next.js from building properly. I wasn't willing to give up, but I knew I needed to figure something out because I wanted something simple, Ghost was expensive and too much for what I need my personal website to be.
+
+## Remembering Max Stoiber's archive blog
+
+Somehow I remembered that Max Stoiber of styled-components fame had [deprecated his old blog](https://mxstbr.blog/) and made [a new one](https://mxstbr.com/thoughts/). I figured instead of fighing all 200 of these posts, that I would keep the ones from 2020 to current on the new site, and archive the rest, which you can find on [the archives](https://archive.tiffanywhite.dev/).
+
+## Frustration
+
+I spent almost three months on this site and I feel like I've gained tons of insight and knowledge on how a new Next.js site works, so much so that my next project is using Next and Supabase.
+
+Was it worth it? Technically yes. Emotionally? Probably not. But it is finished. So have at it.
+
+
+
+[^1]: He's since changed it, but it used to [look like this](https://nextjs-portfolio-blog-self.vercel.app/).
+[^2]: Looks like MDX is on v2 and their web presence looks markedly better.
