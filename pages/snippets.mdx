@@ -53,7 +53,57 @@ Ok but I'm kind of lost here. I forked this portfolio from [reilly.dev](https://
 In that repo was this post, which I haven't deleted (which is gone from his site by the way), about closures, which I grok pretty easily now.
 But reasoning about this in React might take some time!
 
+## JSON as a data structure
 
+I was working on the [projects](/projects) portion of this site that I forked from [ibelick](https://github.com/ibelick/hello) and I thought that I could extract the array of project objects into a little lib file `projects.ts`, create a component and add that component directly into MDX:
+
+```typescript
+const PROJECTS_LIST = [
+  {
+    title: "some project",
+    description:
+      "Ideal burying fearful faithful chaos endless value merciful ideal endless good overcome deceptions contradict. Grandeur will spirit ocean endless good.",
+    links: {
+      text: "Website",
+      link: "https://example.com",
+    },
+    tags: ["React", "Tailwind CSS", "TypeScript", "2023", "Open source", "UI"],
+    emoji: "💫",
+    video: {
+      link: "https://www.youtube.com/watch?v=jIQ6UV2onyI&pp=ygURbnlhbiBjYXQgMTAgaG91cnM%3D",
+      width: "w-full",
+      height: "h-80",
+    },
+  },
+ // ...
+];
+
+export default PROJECTS_LIST;
+```
+
+Then I could do something like:
+
+```tsx
+function Portfolio() {
+  return (
+    <div className="flex flex-col items-center justify-center w-full">
+      <div className="flex flex-col items-center justify-center w-full">
+        <h1 className="text-4xl font-bold text-center text-gray-900">
+          Projects
+        </h1>
+        <p className="mt-2 text-lg text-center text-gray-600">
+          Here are some of the projects I've worked on.
+        </p>
+      </div>
+      <div className="flex flex-col items-center justify-center w-full">
+        <ProjectList projects={PROJECTS_LIST} />
+      </div>
+    </div>
+  );
+};
+```
+
+Make sense? It's now inside my projects page as a reusable component.
 ## Python
 ---
 
