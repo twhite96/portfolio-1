@@ -4,7 +4,7 @@
         <description><![CDATA[tiff's blog]]></description>
         <link>https://tiffanywhite.dev</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sun, 24 Sep 2023 06:50:40 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 24 Sep 2023 07:41:16 GMT</lastBuildDate>
         <atom:link href="https://tiffanywhite.dev/feed.xml" rel="self" type="application/rss+xml"/>
         <author><![CDATA[tiff]]></author>
         <item>
@@ -13,20 +13,6 @@
             <guid isPermaLink="true">/posts/a-simple-terminal-website-with-css-and-typewriterjs</guid>
             <dc:creator><![CDATA[tiff]]></dc:creator>
             <pubDate>Sun, 08 Dec 2019 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Big O Notation]]></title>
-            <link>/posts/big-o</link>
-            <guid isPermaLink="true">/posts/big-o</guid>
-            <dc:creator><![CDATA[tiff]]></dc:creator>
-            <pubDate>Thu, 29 Nov 2018 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Another Point of Vue, A React Dev Perspective]]></title>
-            <link>/posts/another-point-of-vue-a-react-dev-perspective</link>
-            <guid isPermaLink="true">/posts/another-point-of-vue-a-react-dev-perspective</guid>
-            <dc:creator><![CDATA[tiff]]></dc:creator>
-            <pubDate>Tue, 16 Nov 2021 00:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Blog Posts on My Career and Work at Calaxy]]></title>
@@ -43,11 +29,25 @@
             <pubDate>Thu, 05 Jan 2023 05:00:00 GMT</pubDate>
         </item>
         <item>
+            <title><![CDATA[Big O Notation]]></title>
+            <link>/posts/big-o</link>
+            <guid isPermaLink="true">/posts/big-o</guid>
+            <dc:creator><![CDATA[tiff]]></dc:creator>
+            <pubDate>Thu, 29 Nov 2018 00:00:00 GMT</pubDate>
+        </item>
+        <item>
             <title><![CDATA[Building a Static Site Generator with Ruby]]></title>
             <link>/posts/building-a-static-site-generator-with-ruby</link>
             <guid isPermaLink="true">/posts/building-a-static-site-generator-with-ruby</guid>
             <dc:creator><![CDATA[tiff]]></dc:creator>
             <pubDate>Thu, 17 Dec 2020 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Another Point of Vue, A React Dev Perspective]]></title>
+            <link>/posts/another-point-of-vue-a-react-dev-perspective</link>
+            <guid isPermaLink="true">/posts/another-point-of-vue-a-react-dev-perspective</guid>
+            <dc:creator><![CDATA[tiff]]></dc:creator>
+            <pubDate>Tue, 16 Nov 2021 00:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Caching with Memoization and the Singleton Pattern]]></title>
@@ -85,18 +85,18 @@
             <pubDate>Wed, 17 Jun 2020 00:00:00 GMT</pubDate>
         </item>
         <item>
+            <title><![CDATA[Frustration Leads to Iteration]]></title>
+            <link>/posts/frustration-leads-to-iteration</link>
+            <guid isPermaLink="true">/posts/frustration-leads-to-iteration</guid>
+            <dc:creator><![CDATA[tiff]]></dc:creator>
+            <pubDate>Tue, 04 Jul 2023 00:00:00 GMT</pubDate>
+        </item>
+        <item>
             <title><![CDATA[Getting Closure with React]]></title>
             <link>/posts/getting-closure-with-react</link>
             <guid isPermaLink="true">/posts/getting-closure-with-react</guid>
             <dc:creator><![CDATA[You]]></dc:creator>
             <pubDate>Mon, 17 Apr 2023 04:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Home Assistant spurs my love of DevOps]]></title>
-            <link>/posts/home-assistant-spurs-my-love-of-devops</link>
-            <guid isPermaLink="true">/posts/home-assistant-spurs-my-love-of-devops</guid>
-            <dc:creator><![CDATA[tiff]]></dc:creator>
-            <pubDate>Tue, 11 Apr 2023 00:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Hooked on Hooks: Portfolio Madness]]></title>
@@ -106,11 +106,11 @@
             <pubDate>Mon, 14 Sep 2020 00:00:00 GMT</pubDate>
         </item>
         <item>
-            <title><![CDATA[Frustration Leads to Iteration]]></title>
-            <link>/posts/frustration-leads-to-iteration</link>
-            <guid isPermaLink="true">/posts/frustration-leads-to-iteration</guid>
+            <title><![CDATA[Home Assistant spurs my love of DevOps]]></title>
+            <link>/posts/home-assistant-spurs-my-love-of-devops</link>
+            <guid isPermaLink="true">/posts/home-assistant-spurs-my-love-of-devops</guid>
             <dc:creator><![CDATA[tiff]]></dc:creator>
-            <pubDate>Tue, 04 Jul 2023 00:00:00 GMT</pubDate>
+            <pubDate>Tue, 11 Apr 2023 00:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Laid Off But Leveled Up, Lessons Learned]]></title>
@@ -132,6 +132,13 @@
             <guid isPermaLink="true">/posts/micro-frontends-microservices-micro</guid>
             <dc:creator><![CDATA[tiff]]></dc:creator>
             <pubDate>Thu, 23 Feb 2023 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Mustache Fix for my static site generator]]></title>
+            <link>/posts/mustache-fix-for-my-static-site-generator</link>
+            <guid isPermaLink="true">/posts/mustache-fix-for-my-static-site-generator</guid>
+            <dc:creator><![CDATA[tiff]]></dc:creator>
+            <pubDate>Sun, 18 Dec 2022 00:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[My iTerm2 Setup]]></title>
@@ -162,53 +169,11 @@
             <pubDate>Wed, 12 Feb 2020 00:00:00 GMT</pubDate>
         </item>
         <item>
-            <title><![CDATA[Mustache Fix for my static site generator]]></title>
-            <link>/posts/mustache-fix-for-my-static-site-generator</link>
-            <guid isPermaLink="true">/posts/mustache-fix-for-my-static-site-generator</guid>
-            <dc:creator><![CDATA[tiff]]></dc:creator>
-            <pubDate>Sun, 18 Dec 2022 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[New Opportunities]]></title>
-            <link>/posts/new-opportunities</link>
-            <guid isPermaLink="true">/posts/new-opportunities</guid>
-            <dc:creator><![CDATA[tiff]]></dc:creator>
-            <pubDate>Fri, 13 Aug 2021 00:00:00 GMT</pubDate>
-        </item>
-        <item>
             <title><![CDATA[Portfolio Redesign Part 1: Ideas]]></title>
             <link>/posts/portfolio-redesign-part-1-ideas</link>
             <guid isPermaLink="true">/posts/portfolio-redesign-part-1-ideas</guid>
             <dc:creator><![CDATA[tiff]]></dc:creator>
             <pubDate>Wed, 08 Jul 2020 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[⚛ React Tips - Don't define component inside of another component]]></title>
-            <link>/posts/react-tips-dont-define-component-inside-another-component</link>
-            <guid isPermaLink="true">/posts/react-tips-dont-define-component-inside-another-component</guid>
-            <dc:creator><![CDATA[You]]></dc:creator>
-            <pubDate>Mon, 19 Sep 2022 04:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[⚛ React Tips - You're misusing the React useEffect hook (probably)]]></title>
-            <link>/posts/react-tips-youre-misusing-the-react-useeffect-hook-probably</link>
-            <guid isPermaLink="true">/posts/react-tips-youre-misusing-the-react-useeffect-hook-probably</guid>
-            <dc:creator><![CDATA[You]]></dc:creator>
-            <pubDate>Thu, 05 Jan 2023 05:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Real Artists Ship: Portfolio Finished]]></title>
-            <link>/posts/real-artists-ship</link>
-            <guid isPermaLink="true">/posts/real-artists-ship</guid>
-            <dc:creator><![CDATA[tiff]]></dc:creator>
-            <pubDate>Mon, 12 Oct 2020 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Realizations & Breakthroughs]]></title>
-            <link>/posts/realizations-and-breakthroughs</link>
-            <guid isPermaLink="true">/posts/realizations-and-breakthroughs</guid>
-            <dc:creator><![CDATA[tiff]]></dc:creator>
-            <pubDate>Sun, 10 Mar 2019 00:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[6 Code Smells In React I Look Out For]]></title>
@@ -218,6 +183,13 @@
             <pubDate>Thu, 05 Jan 2023 05:00:00 GMT</pubDate>
         </item>
         <item>
+            <title><![CDATA[Realizations & Breakthroughs]]></title>
+            <link>/posts/realizations-and-breakthroughs</link>
+            <guid isPermaLink="true">/posts/realizations-and-breakthroughs</guid>
+            <dc:creator><![CDATA[tiff]]></dc:creator>
+            <pubDate>Sun, 10 Mar 2019 00:00:00 GMT</pubDate>
+        </item>
+        <item>
             <title><![CDATA[The Simplicity of Ruby]]></title>
             <link>/posts/simplicity-ruby</link>
             <guid isPermaLink="true">/posts/simplicity-ruby</guid>
@@ -225,11 +197,11 @@
             <pubDate>Thu, 23 Nov 2017 00:00:00 GMT</pubDate>
         </item>
         <item>
-            <title><![CDATA[The Beautiful Mess That is Webflow]]></title>
-            <link>/posts/the-beautiful-mess-that-is-webflow</link>
-            <guid isPermaLink="true">/posts/the-beautiful-mess-that-is-webflow</guid>
+            <title><![CDATA[New Opportunities]]></title>
+            <link>/posts/new-opportunities</link>
+            <guid isPermaLink="true">/posts/new-opportunities</guid>
             <dc:creator><![CDATA[tiff]]></dc:creator>
-            <pubDate>Sun, 21 Mar 2021 00:00:00 GMT</pubDate>
+            <pubDate>Fri, 13 Aug 2021 00:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Temporary home lab setup]]></title>
@@ -239,32 +211,11 @@
             <pubDate>Fri, 21 Apr 2023 00:00:00 GMT</pubDate>
         </item>
         <item>
-            <title><![CDATA[Update on My Ruby Static Site Generator]]></title>
-            <link>/posts/update-on-my-static-site-generator</link>
-            <guid isPermaLink="true">/posts/update-on-my-static-site-generator</guid>
+            <title><![CDATA[The Beautiful Mess That is Webflow]]></title>
+            <link>/posts/the-beautiful-mess-that-is-webflow</link>
+            <guid isPermaLink="true">/posts/the-beautiful-mess-that-is-webflow</guid>
             <dc:creator><![CDATA[tiff]]></dc:creator>
-            <pubDate>Mon, 12 Sep 2022 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[VS Code Setup: An Update]]></title>
-            <link>/posts/vs-code-setup-an-update</link>
-            <guid isPermaLink="true">/posts/vs-code-setup-an-update</guid>
-            <dc:creator><![CDATA[tiff]]></dc:creator>
-            <pubDate>Thu, 21 Nov 2019 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[useRef and useEffect Seem like code smells]]></title>
-            <link>/posts/useRef-and-useEffect-Seem-like-code-smells</link>
-            <guid isPermaLink="true">/posts/useRef-and-useEffect-Seem-like-code-smells</guid>
-            <dc:creator><![CDATA[tiff]]></dc:creator>
-            <pubDate>Thu, 15 Dec 2022 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Volta for Node Version Management]]></title>
-            <link>/posts/volta-for-node-version-management</link>
-            <guid isPermaLink="true">/posts/volta-for-node-version-management</guid>
-            <dc:creator><![CDATA[tiff]]></dc:creator>
-            <pubDate>Sun, 25 Dec 2022 00:00:00 GMT</pubDate>
+            <pubDate>Sun, 21 Mar 2021 00:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Tinkering in my Home Lab]]></title>
@@ -274,11 +225,60 @@
             <pubDate>Fri, 24 Feb 2023 00:00:00 GMT</pubDate>
         </item>
         <item>
+            <title><![CDATA[Update on My Ruby Static Site Generator]]></title>
+            <link>/posts/update-on-my-static-site-generator</link>
+            <guid isPermaLink="true">/posts/update-on-my-static-site-generator</guid>
+            <dc:creator><![CDATA[tiff]]></dc:creator>
+            <pubDate>Mon, 12 Sep 2022 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Volta for Node Version Management]]></title>
+            <link>/posts/volta-for-node-version-management</link>
+            <guid isPermaLink="true">/posts/volta-for-node-version-management</guid>
+            <dc:creator><![CDATA[tiff]]></dc:creator>
+            <pubDate>Sun, 25 Dec 2022 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[VS Code Setup: An Update]]></title>
+            <link>/posts/vs-code-setup-an-update</link>
+            <guid isPermaLink="true">/posts/vs-code-setup-an-update</guid>
+            <dc:creator><![CDATA[tiff]]></dc:creator>
+            <pubDate>Thu, 21 Nov 2019 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Real Artists Ship: Portfolio Finished]]></title>
+            <link>/posts/real-artists-ship</link>
+            <guid isPermaLink="true">/posts/real-artists-ship</guid>
+            <dc:creator><![CDATA[tiff]]></dc:creator>
+            <pubDate>Mon, 12 Oct 2020 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[⚛ React Tips - You're misusing the React useEffect hook (probably)]]></title>
+            <link>/posts/react-tips-youre-misusing-the-react-useeffect-hook-probably</link>
+            <guid isPermaLink="true">/posts/react-tips-youre-misusing-the-react-useeffect-hook-probably</guid>
+            <dc:creator><![CDATA[You]]></dc:creator>
+            <pubDate>Thu, 05 Jan 2023 05:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[⚛ React Tips - Don't define component inside of another component]]></title>
+            <link>/posts/react-tips-dont-define-component-inside-another-component</link>
+            <guid isPermaLink="true">/posts/react-tips-dont-define-component-inside-another-component</guid>
+            <dc:creator><![CDATA[You]]></dc:creator>
+            <pubDate>Mon, 19 Sep 2022 04:00:00 GMT</pubDate>
+        </item>
+        <item>
             <title><![CDATA[Web Workers What?]]></title>
             <link>/posts/web-workers-what</link>
             <guid isPermaLink="true">/posts/web-workers-what</guid>
             <dc:creator><![CDATA[tiff]]></dc:creator>
             <pubDate>Wed, 07 Dec 2022 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[useRef and useEffect Seem like code smells]]></title>
+            <link>/posts/useRef-and-useEffect-Seem-like-code-smells</link>
+            <guid isPermaLink="true">/posts/useRef-and-useEffect-Seem-like-code-smells</guid>
+            <dc:creator><![CDATA[tiff]]></dc:creator>
+            <pubDate>Thu, 15 Dec 2022 00:00:00 GMT</pubDate>
         </item>
     </channel>
 </rss>
