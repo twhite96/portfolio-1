@@ -1,7 +1,8 @@
 import 'nextra-theme-blog/style.css';
+import { ChakraProvider } from '@chakra-ui/react'
 // import type { AppProps } from 'next/app';
 import Head from 'next/head';
-import PlausibleProvider from "next-plausible";
+
 import '../styles/main.css';
 
 export default function App({ Component, pageProps }) {
@@ -22,9 +23,9 @@ export default function App({ Component, pageProps }) {
           crossOrigin="anonymous"
         />
       </Head>
-      <PlausibleProvider domain="tiffanywhite.dev">
-        <Component {...pageProps} />
-      </PlausibleProvider>
+      <ChakraProvider>
+        <Component {...pageProps } />
+      </ChakraProvider>  
     </>
   );
 }

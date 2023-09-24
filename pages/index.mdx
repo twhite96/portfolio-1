@@ -5,7 +5,9 @@ date: 2021-03-19
 ---
 
 import Image from "next/image";
+import Link from "next/link";
 import { ArrowIcon } from "components/icons";
+import { Card, CardBody, CardFooter, Stack, Heading, Text, Button } from '@chakra-ui/react'
 
 <Image
   src='/images/tiff.jpg'
@@ -19,7 +21,35 @@ import { ArrowIcon } from "components/icons";
 
 Hi there! I'm tiff, a full stack developer in Pennsylvania, US.
 
-I am currently looking to get back into the workplace, but until then, I am hacking on several projects, which you can find [on my project](/projects) page.
+This will be the last time I write here. See the card below to find out why.
+
+<Card
+  direction={{ base: 'column', sm: 'row' }}
+  overflow='hidden'
+  variant='outline'
+>
+  <Image
+    width={280}
+    height={200}
+    sizes='(max-width: 640px) 100vw, 640px'
+    src='https://images.unsplash.com/photo-1667489022797-ab608913feeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=800&q=60'
+    alt='Caffe Latte'
+  />
+
+  <Stack>
+    <CardBody>
+      <Heading size='md'>Final Thoughts</Heading>
+      <Text py='2'>
+        So long, and thanks for all the fish.
+      </Text>
+    </CardBody>
+    <CardFooter>
+      <Button href="/posts/final-thoughts" as={Link} variant='solid' colorScheme='pink'>
+        Read More...
+      </Button>
+    </CardFooter>
+  </Stack>
+</Card>
 
 
  <h2>Find me</h2>
